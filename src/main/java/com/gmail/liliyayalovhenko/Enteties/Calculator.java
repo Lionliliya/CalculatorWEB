@@ -1,5 +1,7 @@
 package com.gmail.liliyayalovhenko.Enteties;
 
+import org.apache.log4j.Logger;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Deque;
@@ -24,6 +26,11 @@ public class Calculator {
 
     @Column(name="ERROR", nullable = false)
     private boolean noError;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    private static final Logger log = Logger.getLogger(Calculator.class);
 
     public Calculator(String expression, double result, boolean noError) {
         this.expression = expression;
@@ -38,6 +45,7 @@ public class Calculator {
         Deque<Character> operators = new LinkedList<>();
 
         if (expression.length() == 0) {
+            log.info("String is empty!");
             System.out.println("Error! String is empty!");
         } else {
             /**
@@ -63,8 +71,10 @@ public class Calculator {
                                 pollOperators(operands, operators);
                             }
                             operators.push(curChar);
+                            log.info("Operator is pushed to stack " + curChar);
                         } catch (Exception e) {
                             noError = false;
+                            log.error(e);
                             System.out.println("Error!!! Problem with current symbol " + curChar);
                             System.out.println(e);
                         }
@@ -97,13 +107,17 @@ public class Calculator {
                      * values are IEEE floating point numbers.**/
                     BigDecimal roundedNumber = getRoundedNumber(numb, doubleDivider);
                     operands.push(roundedNumber.doubleValue());
+                    log.info("Number is pushed to stack " + roundedNumber.doubleValue());
                 } else {
                     System.out.println("Error: unknown symbol <" + curChar + " >'");
+                    log.info("Error: unknown symbol <" + curChar + " >'");
                     noError = false;
                 }
             }
         }
+
         result = noError ? operands.poll() : 0;
+        log.info("Method calculateExpression() Result is " + result);
     }
 
     public void getNextChar() {
@@ -120,6 +134,7 @@ public class Calculator {
             return ((currentChar - '0') <= 9 && 0 <= (currentChar - '0') || (currentChar == '.' &&
                     (expression.charAt(numChar - 2) - '0') >= 0 && (expression.charAt(numChar - 2) - '0') <= 9));
         } catch (NullPointerException e) {
+            log.error(e);
             return false;
         }
     }
@@ -142,12 +157,14 @@ public class Calculator {
             case '-':
                 return 2;
             default:
+                log.error("Method getPriority(operator) Not supported operations: char - " + operator);
                 throw new Exception("Not supported operations: char - " + operator);
         }
     }
 
     private boolean canPollOperators(char operator1, Deque<Character> operators) throws Exception {
         if (operators.size() == 0) {
+            log.info("List of operators is empty. Method canPollOperators(operator1, Deque operators)");
             return false;
         }
 
@@ -179,13 +196,16 @@ public class Calculator {
             }
         } catch (NullPointerException e) {
             noError = false;
+            log.error(e);
             System.out.println("Wrong format of expression! Please put valid expression!");
         }
     }
 
     private void calculateInParentheses(Deque<Double> operands, Deque<Character> operators) {
-        while (noError && operators.size() > 0 && operators.peek() != '(')
+        while (noError && operators.size() > 0 && operators.peek() != '(') {
             pollOperators(operands, operators);
+            log.info("Method calculateInParentheses(Deque operands, Deque operators) poll operators ");
+        }
     }
 
     public double getResult() {
@@ -194,6 +214,7 @@ public class Calculator {
 
     public void setExpression(String expression) {
         this.expression = expression;
+        log.info(expression + " is set to calculator id " + this.getId());
     }
 
     public boolean isNoError() {
@@ -215,5 +236,14 @@ public class Calculator {
     public void setNoError(boolean noError) {
         this.noError = noError;
     }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
 }
 

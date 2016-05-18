@@ -2,6 +2,7 @@ package com.gmail.liliyayalovhenko.Configurations;
 
 import com.gmail.liliyayalovhenko.DAO.CalculatorDAO;
 import com.gmail.liliyayalovhenko.DAO.CalculatorDAOImplementation;
+import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -27,6 +28,11 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public EntityManager entityManager() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("CalculatorJPA");
         return emf.createEntityManager();
+    }
+
+    @Bean
+    public Logger log() {
+        return Logger.getLogger(CalculatorDAOImplementation.class);
     }
 
     @Bean

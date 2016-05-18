@@ -9,7 +9,7 @@ public interface CalculatorDAO {
 
     public void registerUser(User newUser);
 
-    public User getUserByLogin(String username);
+    public User getUserByLoginAndPassword(String username, String password);
 
     public List<User> getAllUser();
 
@@ -19,8 +19,10 @@ public interface CalculatorDAO {
 
     public List<Calculator> getAllExpression();
 
-    public void saveExpression(String expression, double result, String isError);
+    public void saveExpression(String expression, double result, boolean isError);
 
-    public void saveExpression(Calculator calculator);
+    public void saveCalculator(Calculator calculator);
+
+    public User getUserById(long id);
 
 }

@@ -1,0 +1,103 @@
+Using CATALINA_BASE:   /home/lionliliya/.IntelliJIdea14/system/tomcat/Unnamed_CalculatorInternship
+Using CATALINA_HOME:   /home/lionliliya/apache-tomcat-8.0.26
+Using CATALINA_TMPDIR: /home/lionliliya/apache-tomcat-8.0.26/temp
+Using JRE_HOME:        /usr/lib/jvm/java-8-oracle
+Using CLASSPATH:       /home/lionliliya/apache-tomcat-8.0.26/bin/bootstrap.jar:/home/lionliliya/apache-tomcat-8.0.26/bin/tomcat-juli.jar
+18-May-2016 19:30:59.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.26
+18-May-2016 19:30:59.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 18 2015 11:38:37 UTC
+18-May-2016 19:30:59.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.26.0
+18-May-2016 19:30:59.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+18-May-2016 19:30:59.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.19.0-58-generic
+18-May-2016 19:30:59.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-May-2016 19:30:59.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+18-May-2016 19:30:59.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b14
+18-May-2016 19:30:59.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-May-2016 19:30:59.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/lionliliya/.IntelliJIdea14/system/tomcat/Unnamed_CalculatorInternship
+18-May-2016 19:30:59.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/lionliliya/apache-tomcat-8.0.26
+18-May-2016 19:30:59.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/lionliliya/.IntelliJIdea14/system/tomcat/Unnamed_CalculatorInternship/conf/logging.properties
+18-May-2016 19:30:59.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-May-2016 19:30:59.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote=
+18-May-2016 19:30:59.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=1099
+18-May-2016 19:30:59.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+18-May-2016 19:30:59.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+18-May-2016 19:30:59.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+18-May-2016 19:30:59.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/lionliliya/apache-tomcat-8.0.26/endorsed
+18-May-2016 19:30:59.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/lionliliya/.IntelliJIdea14/system/tomcat/Unnamed_CalculatorInternship
+18-May-2016 19:30:59.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/lionliliya/apache-tomcat-8.0.26
+18-May-2016 19:30:59.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/lionliliya/apache-tomcat-8.0.26/temp
+18-May-2016 19:30:59.930 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/lionliliya/intelij/idea-IU-139.659.2/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+18-May-2016 19:31:00.196 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-May-2016 19:31:00.225 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-May-2016 19:31:00.228 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-May-2016 19:31:00.230 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-May-2016 19:31:00.234 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 940 ms
+18-May-2016 19:31:00.283 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+18-May-2016 19:31:00.283 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.26
+18-May-2016 19:31:00.298 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+18-May-2016 19:31:00.326 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+18-May-2016 19:31:00.337 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 102 ms
+Connected to server
+18-May-2016 19:31:02.723 INFO [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:ERROR Could not find value for key log4j.appender.file
+log4j:ERROR Could not instantiate appender named "file".
+2016-05-18 19:31:03  INFO RMI TCP Connection(2)-127.0.0.1 DispatcherServlet:initServletBean:487 - FrameworkServlet 'dispatcher': initialization started
+2016-05-18 19:31:03  INFO RMI TCP Connection(2)-127.0.0.1 AnnotationConfigWebApplicationContext:prepareRefresh:578 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed May 18 19:31:03 EEST 2016]; root of context hierarchy
+2016-05-18 19:31:03  INFO RMI TCP Connection(2)-127.0.0.1 AnnotationConfigWebApplicationContext:loadBeanDefinitions:207 - Registering annotated classes: [class com.gmail.liliyayalovhenko.Configurations.AppConfig]
+2016-05-18 19:31:03  WARN RMI TCP Connection(2)-127.0.0.1 AutowiredAnnotationBeanPostProcessor:doWith:398 - Autowired annotation is not supported on static fields: private static org.apache.log4j.Logger com.gmail.liliyayalovhenko.DAO.CalculatorDAOImplementation.log
+2016-05-18 19:31:03  WARN RMI TCP Connection(2)-127.0.0.1 HibernatePersistence:logDeprecation:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-18 19:31:03  WARN RMI TCP Connection(2)-127.0.0.1 HibernatePersistence:logDeprecation:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-18 19:31:03  WARN RMI TCP Connection(2)-127.0.0.1 HibernatePersistence:logDeprecation:58 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-18 19:31:03  INFO RMI TCP Connection(2)-127.0.0.1 LogHelper:logPersistenceUnitInformation:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: CalculatorJPA
+	...]
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 Version:logVersion:54 - HHH000412: Hibernate Core {4.3.7.Final}
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 Environment:<clinit>:239 - HHH000206: hibernate.properties not found
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 Environment:buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 Version:<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-18 19:31:04  WARN RMI TCP Connection(2)-127.0.0.1 DriverManagerConnectionProviderImpl:configure:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 DriverManagerConnectionProviderImpl:buildCreator:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/calculatorDB?             autoReconnect=true&useUnicode=true&characterEncoding=utf8]
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 DriverManagerConnectionProviderImpl:buildCreator:175 - HHH000046: Connection properties: {useUnicode=true, user=root, password=****, characterEncoding=UTF-8, charSet=UTF-8}
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 DriverManagerConnectionProviderImpl:buildCreator:180 - HHH000006: Autocommit mode: false
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 DriverManagerConnectionProviderImpl:configure:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-05-18 19:31:04  INFO RMI TCP Connection(2)-127.0.0.1 Dialect:<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 ASTQueryTranslatorFactory:<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 SchemaUpdate:execute:182 - HHH000228: Running hbm2ddl schema update
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 SchemaUpdate:execute:193 - HHH000102: Fetching database metadata
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 SchemaUpdate:execute:205 - HHH000396: Updating schema
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:66 - HHH000261: Table found: calculatorDB.CALCULATOR
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:67 - HHH000037: Columns: [result, curchar, isdouble, user_id, expr, id, error, numchar]
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:69 - HHH000108: Foreign keys: []
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:70 - HHH000126: Indexes: [primary]
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:66 - HHH000261: Table found: calculatorDB.USER
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:67 - HHH000037: Columns: [password, id, username]
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:69 - HHH000108: Foreign keys: []
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 TableMetadata:<init>:70 - HHH000126: Indexes: [primary]
+2016-05-18 19:31:05 ERROR RMI TCP Connection(2)-127.0.0.1 SchemaUpdate:execute:236 - HHH000388: Unsuccessful: alter table CALCULATOR add constraint FK_8a1444weurtnyu0f1iyhogg3i foreign key (user_id) references USER (id)
+2016-05-18 19:31:05 ERROR RMI TCP Connection(2)-127.0.0.1 SchemaUpdate:execute:237 - Cannot add foreign key constraint
+2016-05-18 19:31:05  INFO RMI TCP Connection(2)-127.0.0.1 SchemaUpdate:execute:242 - HHH000232: Schema update complete
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.mainUser(long,javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/calculate],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.calculating(java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/calculate/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.calculatingWithLogin(long,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.login(javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/loginUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/logout/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.logout(long,javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.main(javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerMapping:register:534 - Mapped "{[/register],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gmail.liliyayalovhenko.Controller.Controller.register(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 SimpleUrlHandlerMapping:registerHandler:341 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 RequestMappingHandlerAdapter:initControllerAdviceCache:539 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed May 18 19:31:03 EEST 2016]; root of context hierarchy
+2016-05-18 19:31:06  INFO RMI TCP Connection(2)-127.0.0.1 DispatcherServlet:initServletBean:506 - FrameworkServlet 'dispatcher': initialization completed in 3929 ms
+18-May-2016 19:31:10.310 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/lionliliya/apache-tomcat-8.0.26/webapps/manager
+18-May-2016 19:31:10.375 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/lionliliya/apache-tomcat-8.0.26/webapps/manager has finished in 63 ms
+2016-05-18 19:31:20  INFO http-nio-8080-exec-5 Calculator:setExpression:217 - .67 is set to calculator id 0
+2016-05-18 19:31:20  INFO http-nio-8080-exec-5 Calculator:setExpression:217 - (.67)F is set to calculator id 0
+2016-05-18 19:31:20  INFO http-nio-8080-exec-5 Calculator:canPollOperators:167 - List of operators is empty. Method canPollOperators(operator1, Deque operators)
+2016-05-18 19:31:20  INFO http-nio-8080-exec-5 Calculator:calculateExpression:74 - Operator is pushed to stack (
+Error: unknown symbol <. >'
+2016-05-18 19:31:20  INFO http-nio-8080-exec-5 Calculator:calculateExpression:113 - Error: unknown symbol <. >'
+2016-05-18 19:31:20  INFO http-nio-8080-exec-5 Calculator:calculateExpression:120 - Method calculateExpression() Result is 0.0
+Hibernate: insert into CALCULATOR (curChar, EXPR, isDouble, ERROR, numChar, RESULT, user_id) values (?, ?, ?, ?, ?, ?, ?)
+2016-05-18 19:31:28  WARN http-nio-8080-exec-8 DefaultHandlerExceptionResolver:handleTypeMismatch:354 - Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type [java.lang.String] to required type [long]; nested exception is java.lang.NumberFormatException: For input string: "logout"
+2016-05-18 19:32:09  WARN http-nio-8080-exec-9 DefaultHandlerExceptionResolver:handleTypeMismatch:354 - Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type [java.lang.String] to required type [long]; nested exception is java.lang.NumberFormatException: For input string: "logout"

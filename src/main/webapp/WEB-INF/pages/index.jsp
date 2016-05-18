@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +13,7 @@
     <link href="/resources/bootstrap/css/sticky-footer.css" rel="stylesheet">
 </head>
 <body>
+
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
@@ -35,10 +37,13 @@
               <h3 class="panel-title">Result</h3>
             </div>
             <div class="panel-body">
-              ${result}
+              ${result.result}
+                  <c:if test="${result.noError eq false}">
+                     <article>Error. See log file.</article>
+                  </c:if>
             </div>
           </div>
-            <button type="button" class="btn btn-lg btn-success"><a href="/">Try again</a></button>
+            <a href="/"><button type="button" class="btn btn-lg btn-success">Try again</button></a>
         </div>
 
       </div>

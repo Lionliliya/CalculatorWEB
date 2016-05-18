@@ -1,6 +1,8 @@
 package com.gmail.liliyayalovhenko.Enteties;
 
 
+import org.apache.log4j.Logger;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -19,13 +21,17 @@ public class User {
     @Column(name = "PASSWORD", nullable = false)
     private String password;
 
-    @OneToMany(fetch= FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(fetch= FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
     private List<Calculator> allExprOfUser;
+
+    private static final Logger log = Logger.getLogger(User.class);
 
     public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
+
+    public User() {}
 
     public User(String username, String password, List<Calculator> allExprOfUser) {
         this.username = username;
@@ -34,9 +40,10 @@ public class User {
     }
 
     public void addExpression(Calculator calculator) {
-        if ( ! allExprOfUser.contains(calculator)) {
-            allExprOfUser.add(calculator);
-        }
+        log.info("Method addExpression(Calculator). Start to set calculator to User. Id -  " + this.id +", calculator_id " + calculator.getId());
+        allExprOfUser.add(calculator);
+        log.info("Method addExpression(Calculator). Calculator_id " + calculator.getId() + " added!");
+
     }
 
     public long getId() {
@@ -70,4 +77,6 @@ public class User {
     public void setAllExprOfUser(List<Calculator> allExprOfUser) {
         this.allExprOfUser = allExprOfUser;
     }
+
 }
+
