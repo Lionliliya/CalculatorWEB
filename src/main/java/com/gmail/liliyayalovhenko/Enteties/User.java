@@ -33,6 +33,12 @@ public class User {
         this.allExprOfUser = allExprOfUser;
     }
 
+    public void addExpression(Calculator calculator) {
+        if ( ! allExprOfUser.contains(calculator)) {
+            allExprOfUser.add(calculator);
+        }
+    }
+
     public long getId() {
         return id;
     }

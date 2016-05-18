@@ -16,7 +16,7 @@ public class Calculator {
     @Column(name="EXPR", nullable = false)
     private String expression;
 
-    @Column(name="RESULT", nullable = false)
+    @Column(name="RESULT", nullable = false, precision=10, scale=3 )
     private double result;
     private int numChar;
     private char curChar;
