@@ -10,7 +10,7 @@ All logs are in log file
 
 Additionals:
 
-1.Record entered by the user the expression string to the database as well as result (relational - MySQL)
+1. Record entered by the user the expression string to the database as well as result (relational - MySQL)
 
 2. Logging of runtime program execution
 
