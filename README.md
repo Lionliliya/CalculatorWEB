@@ -11,7 +11,9 @@ All logs are in log file
 Additionals:
 
 1.Record entered by the user the expression string to the database as well as result (relational - MySQL)
+
 2. Logging of runtime program execution
+
 3. User Registration, saving username, password and all user's calculated expression to database.
 
 Иной вариант реализации программы
